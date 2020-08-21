@@ -1,4 +1,4 @@
-require 'pry'
+
 
 
 
@@ -24,9 +24,13 @@ def consolidate_cart(cart)
    cart.select do |element| 
     if cart.count(element) == 1
       element[:count]= 1
+      new_cart.push(element)
     else element[:count]= cart.count(element)
+      new_cart.push(element)
+  
     end 
   end
+  new_cart
 end
 
 # borrrowed from stack overflow duplicate = array.select{|element| array.count(element) > 1 }
