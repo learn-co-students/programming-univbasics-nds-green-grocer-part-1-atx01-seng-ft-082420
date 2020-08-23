@@ -1,5 +1,3 @@
-require 'pry'
-
 def find_item_by_name_in_collection (name,collection)
   counter = 0
   while counter < collection.length
@@ -11,7 +9,6 @@ def find_item_by_name_in_collection (name,collection)
 end
  
  
-
 def consolidate_cart(cart)
   counter = 0
   niu_cart = []
@@ -33,6 +30,3 @@ def consolidate_cart(cart)
   end
   niu_cart
 end
-
-
-  
